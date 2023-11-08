@@ -1,6 +1,9 @@
 # JusMundi
 
-To run this small script run `npm i` enter `node .\french-convertor.js` in your terminal 
+To run this script enter `npm i` then `node .\french-convertor.js` in your terminal and enter a comma seperated list of numbers
 
 # input
-Comma sperated list
+Comma seperated list
+
+# output
+Hopefully some French words
