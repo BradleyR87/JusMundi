@@ -56,17 +56,33 @@ function TensLessThan70(number){
 }
 
 function HundredsBusinessLogic(number){
-  if(number == 100) return 'cent';
-  if(number < 200) return `cent-${numbersToFrenchWords(number % 100)}`;
-  if(number % 100 === 0) return `${units[Math.floor(number / 100)]}-cents`;
-  return numbersToFrenchWords(Math.floor(number / 100)) + "-cents-" + numbersToFrenchWords(number % 100);
-}
+  if(number == 100){
+    return 'cent';
+  } 
+  else if(number < 200){
+    return `cent-${numbersToFrenchWords(number % 100)}`;
+  }
+  else if(number % 100 === 0){
+    return `${units[Math.floor(number / 100)]}-cents`;
+  }
+  else{
+    return numbersToFrenchWords(Math.floor(number / 100)) + "-cents-" + numbersToFrenchWords(number % 100);
+  }
+ }
 
 function ThousandsBusinessLogic(number){
-  if(number == 1000) return 'mille';
-  if(number < 2000) return `mille-${numbersToFrenchWords(number % 1000)}`;
-  if(number % 1000 === 0) return `${units[Math.floor(number / 1000)]}-miles`;
-  return numbersToFrenchWords(Math.floor(number / 1000)) + "-miles-" + numbersToFrenchWords(number % 1000);
+  if(number == 1000){
+    return 'mille';
+  } 
+  else if(number < 2000){
+    return `mille-${numbersToFrenchWords(number % 1000)}`;
+  } 
+  else if(number % 1000 === 0){
+    return `${units[Math.floor(number / 1000)]}-miles`;
+  } 
+  else{
+    return numbersToFrenchWords(Math.floor(number / 1000)) + "-miles-" + numbersToFrenchWords(number % 1000);
+  }
 }
 
 function IsHundreds(number){
